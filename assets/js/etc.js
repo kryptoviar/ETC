@@ -594,7 +594,7 @@ function updateEthPrice () {
     ethPrice = 1 / (sellPrice + ((buyPrice - sellPrice) / 2))
     ethPriceTimer = setTimeout(updateEthPrice, 10000)
   } else {
-    $.getJSON('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=ETH,EUR,' + currency, function (result) {
+    $.getJSON('https://min-api.cryptocompare.com/data/price?fsym=ETC&tsyms=ETH,USD,' + currency, function (result) {
       var eth = result.ETH
       var usd = result.USD
       ethPrice = parseFloat(eth)
