@@ -16,7 +16,7 @@ var buyPrice = 0;
 var globalBuyPrice = 0;
 var sellPrice = 0;
 var ethPrice = 0;
-var currency = (typeof default_currency === 'undefined') ? 'USD' : default_currency;
+var currency = (typeof default_currency === 'undefined') ? 'EUR' : default_currency;
 var ethPriceTimer = null;
 var dataTimer = null;
 var infoTimer = null;
